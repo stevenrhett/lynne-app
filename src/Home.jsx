@@ -6,7 +6,6 @@ import {Popover, Transition} from '@headlessui/react'
 import {
     BanknotesIcon,
     Bars3Icon,
-    BellIcon,
     CheckBadgeIcon,
     ClockIcon,
     ReceiptRefundIcon,
@@ -19,16 +18,16 @@ import {Link} from "react-router-dom";
 const user = {
     name: 'Lynne Sullivan',
     email: 'sullivan@peteygreene.org',
-    role: 'Regional Manager: Petey Greene Program - MA',
+    role: 'Regional Manager: Petey Greene Program - MA & RI',
 
 
 }
 const navigation = [
     {name: 'Home', href: '/', current: false},
     {name: 'Profile', href: '/profile', current: false},
-    {name: 'Videos', href: '#', current: false},
-    {name: 'Resume', href: '#', current: false},
-    {name: 'Contact', href: '#', current: false},
+    {name: 'Videos', href: '/videos', current: false},
+    {name: 'Resume', href: '/resume', current: false},
+    {name: 'Contact', href: '/contact', current: false},
 ]
 // const userNavigation = [
 //     {name: 'Your Profile', href: '#'},
@@ -36,50 +35,50 @@ const navigation = [
 //     // {name: 'Sign out', href: '#'},
 // ]
 const stats = [
-    {label: 'Reform Advocate'},
+    {label: ' Advocate for Educational Justice and Criminal Justice'},
     {label: 'Drug and Alcohol Licensing'},
-    {label: 'NEBHE commission'},
+    {label: 'NEBHE commission board member'},
 ]
 const actions = [
     {
         icon: ClockIcon,
         name: 'MyTERN',
-        href: '#',
+        href: 'https://tischcollege.tufts.edu/tufts-university-prison-initiative-tisch-college',
         iconForeground: 'text-teal-700',
         iconBackground: 'bg-teal-50',
     },
     {
         icon: CheckBadgeIcon,
         name: 'New Directions',
-        href: '#',
+        href: 'https://www.trentondaily.com/commencement-for-the-inaugural-class-of-the-new-direction-project-was-transformative/',
         iconForeground: 'text-purple-700',
         iconBackground: 'bg-purple-50',
     },
     {
         icon: UsersIcon,
         name: 'Partakers',
-        href: '#',
+        href: 'https://partakers.org/',
         iconForeground: 'text-sky-700',
         iconBackground: 'bg-sky-50',
     },
     {
         icon: BanknotesIcon,
         name: 'Stone Associates',
-        href: '#',
+        href: 'https://www.linkedin.com/company/stone-associates-trust/about/',
         iconForeground: 'text-yellow-700',
         iconBackground: 'bg-yellow-50',
     },
     {
         icon: ReceiptRefundIcon,
         name: 'The Association for Addiction',
-        href: '#',
+        href: 'https://www.naadac.org/',
         iconForeground: 'text-rose-700',
         iconBackground: 'bg-rose-50',
     },
     {
         icon: ReceiptRefundIcon,
-        name: 'The Association for Addiction',
-        href: '#',
+        name: 'TIMBo',
+        href: 'https://yogahope.org/',
         iconForeground: 'text-rose-700',
         iconBackground: 'bg-rose-50',
     },
@@ -91,8 +90,9 @@ const announcements = [
         title: 'Peer Support practitioner and trained in Trauma-informed techniques',
         href: '#',
         preview:
-            'Cum qui rem deleniti. Suscipit in dolor veritatis sequi aut. Vero ut earum quis deleniti. Ut a sunt eum cum ut repudiandae possimus. Nihil ex tempora neque cum consectetur dolores.',
-    },
+        'Trauma Informed Peer Support takes peer support to the next level by supporting ' +
+            'people with lived experience and/or peer support workers achieve a greater understanding' +
+            'to respond to trauma.'},
     {
         id: 2,
         title: '',
@@ -311,7 +311,7 @@ export default function Home() {
                                                             className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
                                                         >
                                                             <span className="sr-only">View notifications</span>
-                                                            <BellIcon className="h-6 w-6" aria-hidden="true"/>
+                                                            {/*<BellIcon className="h-6 w-6" aria-hidden="true"/>*/}
                                                         </button>
                                                     </div>
                                                     {/*<div className="mt-3 space-y-1 px-2">*/}
@@ -423,9 +423,9 @@ export default function Home() {
                                                         </a>
                                                     </h3>
                                                     <p className="mt-2 text-sm text-gray-500">
-                                                        Doloribus dolores nostrum quia qui natus officia quod et
-                                                        dolorem. Sit repellendus qui ut at
-                                                        blanditiis et quo et molestiae.
+                                                        {/*TUPIT works in partnership with local and national networks of*/}
+                                                        {/*individuals, groups, and organizations working to improve the*/}
+                                                        {/*system of criminal justice through access to education*/}
                                                     </p>
                                                 </div>
                                                 <span
