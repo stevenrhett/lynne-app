@@ -1,4 +1,4 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { LockClosedIcon} from '@heroicons/react/20/solid'
 
 export default function Resume() {
     return (
@@ -70,7 +70,7 @@ export default function Resume() {
                             <p className="mt-8">
 
                             </p>
-                            <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
+                            <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900"></h2>
                             <p className="mt-6">
 
                             </p>

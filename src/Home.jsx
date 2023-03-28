@@ -3,16 +3,8 @@ import "./Home.module.css"
 import lynne from "./assets/lynne.png"
 // import lynne2 from "./assets/lynne-2.png"
 import {Popover, Transition} from '@headlessui/react'
-import {
-    BanknotesIcon,
-    Bars3Icon,
-    CheckBadgeIcon,
-    ClockIcon,
-    ReceiptRefundIcon,
-    UsersIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
-import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
+import {Bars3Icon, ChartBarIcon, CheckBadgeIcon, ReceiptRefundIcon, XMarkIcon,} from '@heroicons/react/24/outline'
+import {CheckCircleIcon, LinkIcon, MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 import {Link} from "react-router-dom";
 
 const user = {
@@ -29,11 +21,6 @@ const navigation = [
     {name: 'Resume', href: '/resume', current: false},
     {name: 'Contact', href: '/contact', current: false},
 ]
-// const userNavigation = [
-//     {name: 'Your Profile', href: '#'},
-//     // {name: 'Settings', href: '#'},
-//     // {name: 'Sign out', href: '#'},
-// ]
 const stats = [
     {label: ' Advocate for Educational Justice and Criminal Justice'},
     {label: 'Drug and Alcohol Licensing'},
@@ -41,28 +28,28 @@ const stats = [
 ]
 const actions = [
     {
-        icon: ClockIcon,
+        icon: CheckBadgeIcon,
         name: 'MyTERN',
         href: 'https://tischcollege.tufts.edu/tufts-university-prison-initiative-tisch-college',
-        iconForeground: 'text-teal-700',
+        iconForeground: 'text-gray-700',
         iconBackground: 'bg-teal-50',
     },
     {
-        icon: CheckBadgeIcon,
+        icon: CheckCircleIcon,
         name: 'New Directions',
         href: 'https://www.trentondaily.com/commencement-for-the-inaugural-class-of-the-new-direction-project-was-transformative/',
         iconForeground: 'text-purple-700',
         iconBackground: 'bg-purple-50',
     },
     {
-        icon: UsersIcon,
+        icon: LinkIcon,
         name: 'Partakers',
         href: 'https://partakers.org/',
         iconForeground: 'text-sky-700',
         iconBackground: 'bg-sky-50',
     },
     {
-        icon: BanknotesIcon,
+        icon: CheckCircleIcon,
         name: 'Stone Associates',
         href: 'https://www.linkedin.com/company/stone-associates-trust/about/',
         iconForeground: 'text-yellow-700',
@@ -76,7 +63,7 @@ const actions = [
         iconBackground: 'bg-rose-50',
     },
     {
-        icon: ReceiptRefundIcon,
+        icon: ChartBarIcon,
         name: 'TIMBo',
         href: 'https://yogahope.org/',
         iconForeground: 'text-rose-700',
@@ -90,9 +77,10 @@ const announcements = [
         title: 'Peer Support practitioner and trained in Trauma-informed techniques',
         href: '#',
         preview:
-        'Trauma Informed Peer Support takes peer support to the next level by supporting ' +
+            'Trauma Informed Peer Support takes peer support to the next level by supporting ' +
             'people with lived experience and/or peer support workers achieve a greater understanding' +
-            'to respond to trauma.'},
+            'to respond to trauma.'
+    },
     {
         id: 2,
         title: '',
@@ -117,7 +105,7 @@ export default function Home() {
     return (
         <>
 
-            <div className="min-h-full">
+            <div className="min-h-full ">
                 <Popover as="header" className="bg-gradient-to-r from-purple-300 to-cyan-400 pb-24">
                     {({open}) => (
                         <>
@@ -271,7 +259,7 @@ export default function Home() {
                                             className="absolute inset-x-0 top-0 z-30 mx-auto w-full max-w-3xl origin-top transform p-2 transition"
                                         >
                                             <div
-                                                className="divide-y divide-gray-200 rounded-lg bg-gradient-to-r from-purple-300 to-cyan-500 shadow-lg ring-1 ring-black ring-opacity-5">
+                                                className="divide-y divide-gray-200 rounded-lg  shadow-lg ring-1 ring-black ring-opacity-5">
                                                 <div className="pt-3 pb-2">
                                                     <div className="flex items-center justify-between px-4">
 
@@ -388,7 +376,7 @@ export default function Home() {
                                 {/* Actions panel */}
                                 <section aria-labelledby="quick-links-title">
                                     <div
-                                        className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+                                        className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
                                         <h2 className="sr-only" id="quick-links-title">
                                             Quick links
                                         </h2>
