@@ -5,17 +5,22 @@ import Profile from "./Profile.jsx";
 import Videos from "./Videos.jsx";
 import Resume from "./Resume.jsx";
 import Contact from "./Contact.jsx";
+import RootLayout from "./RootLayout.jsx";
 
 
 const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <RootLayout/>,
+            children: [
+                {path: "/home", element: <Home/>},
+                {path: "profile", element: <Profile/>},
+                {path: "videos", element: <Videos/>},
+                {path: "resume", element: <Resume/>},
+                {path: "contact", element: <Contact/>},
+            ],
+        }
 
-
-
-    {path: "/", element: <Home/>},
-    {path: "/profile", element: <Profile/>},
-    {path: "/videos", element: <Videos/>},
-    {path: "/resume", element: <Resume/>},
-    {path: "/contact", element: <Contact/>},
     ])
 ;
 
