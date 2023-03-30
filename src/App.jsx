@@ -8,21 +8,15 @@ import Contact from "./Contact.jsx";
 import RootLayout from "./RootLayout.jsx";
 
 
-const router = createBrowserRouter([
-        {
-            path: "/",
-            element: <RootLayout/>,
-            children: [
-                {path: "/home", element: <Home/>},
-                {path: "profile", element: <Profile/>},
-                {path: "videos", element: <Videos/>},
-                {path: "resume", element: <Resume/>},
-                {path: "contact", element: <Contact/>},
-            ],
-        }
+const router = createBrowserRouter([{
+    path: "/",
+    element: <RootLayout/>,
+    children: [{path: "/", element: <Home/>}, {path: "profile", element: <Profile/>}, {
+        path: "videos", element: <Videos/>
+    }, {path: "resume", element: <Resume/>}, {path: "contact", element: <Contact/>},],
+}
 
-    ])
-;
+]);
 
 const App = () => {
     return (<RouterProvider router={router}/>)
