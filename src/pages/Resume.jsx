@@ -7,7 +7,7 @@ export default function Resume() {
                 <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
                     <img
                         className="absolute inset-0 h-full w-auto bg-gray-50 object-contain"
-                        src="src/assets/partners.png"
+                        src="../assets/partners.png"
                         alt=""
                     />
                 </div>
