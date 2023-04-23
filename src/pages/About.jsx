@@ -3,23 +3,23 @@ import {useState} from "react";
 
 
 export default function About() {
-    const [items] = useState([{
-        name: 'MyTERN', href: 'https://tischcollege.tufts.edu/tufts-university-prison-initiative-tisch-college',
-    }, {
-        name: 'New Directions',
-        href: 'https://www.trentondaily.com/commencement-for-the-inaugural-class-of-the-new-direction-project-was-transformative/'
-    }, {name: 'Partakers', href: 'https://partakers.org/'},
-
-
-        {
-            name: 'Stone Associates', href: 'https://www.linkedin.com/company/stone-associates-trust/about/'
-        },
-
-        {name: 'The Association for Addiction', href: 'https://www.naadac.org/'}, {
-            name: 'TIMBo', href: 'https://yogahope.org/'
-        }
-
-    ])
+    // const [items] = useState([{
+    //     name: 'MyTERN', href: 'https://tischcollege.tufts.edu/tufts-university-prison-initiative-tisch-college',
+    // }, {
+    //     name: 'New Directions',
+    //     href: 'https://www.trentondaily.com/commencement-for-the-inaugural-class-of-the-new-direction-project-was-transformative/'
+    // }, {name: 'Partakers', href: 'https://partakers.org/'},
+    //
+    //
+    //     {
+    //         name: 'Stone Associates', href: 'https://www.linkedin.com/company/stone-associates-trust/about/'
+    //     },
+    //
+    //     {name: 'The Association for Addiction', href: 'https://www.naadac.org/'}, {
+    //         name: 'TIMBo', href: 'https://yogahope.org/'
+    //     }
+    //
+    // ])
     return (
         <div className="root-layout">
             <div className="drawer drawer-mobile">
