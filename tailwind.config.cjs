@@ -5,8 +5,10 @@ module.exports = {
         extend: {},
     },
     plugins: [
-        require('@tailwindcss/forms'),
         require('@tailwindcss/aspect-ratio'),
         require('prettier-plugin-tailwindcss'),
-    ],
+        require("daisyui"),
+        require('@tailwindcss/forms')
+
+],
 }
