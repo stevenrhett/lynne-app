@@ -7,8 +7,8 @@ module.exports = {
     plugins: [
         require('@tailwindcss/aspect-ratio'),
         require('prettier-plugin-tailwindcss'),
-        require("daisyui"),
-        require('@tailwindcss/forms')
+        require('@tailwindcss/forms'),
+        require("daisyui")
 
-],
+    ],
 }
