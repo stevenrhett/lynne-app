@@ -1,6 +1,12 @@
-html{
+html {
     height: 100%;
 }
-body{
+
+body {
     height: 100%;
+}
+
+.list a:hover,
+.list a:active {
+    color: indigo;
 }
