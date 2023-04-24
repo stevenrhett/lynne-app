@@ -1,4 +1,5 @@
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from '@heroicons/react/24/outline'
+import {Form} from "react-router-dom";
 
 export default function Contact() {
     return (
@@ -69,7 +70,7 @@ export default function Contact() {
                         </dl>
                     </div>
                 </div>
-                <form action="#" method="POST" className="px-6 pb-16 lg:py-24 lg:px-4">
+                <Form action="#" method="POST" className="px-6 pb-16 lg:py-24 lg:px-4">
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-y-6 gap-x-8">
                             <div>
@@ -113,7 +114,7 @@ export default function Contact() {
                             </button>
                         </div>
                     </div>
-                </form>
+                </Form>
 
             </div>
         </div>

@@ -2,11 +2,11 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline/index.js";
 import {useState} from "react";
 import {Dialog} from "@headlessui/react";
 
-const navigation = [{name: 'Home', href: '/', current: false}, {
-    name: 'Profile', href: '/profile', current: false
+const navigation = [{name: 'Home', href: '', current: false}, {
+    name: 'Profile', href: 'profile', current: false
 }, {
-    name: 'Resume', href: '/resume', current: false
-}, {name: 'videos', href: '/videos', current: false},];
+    name: 'Resume', href: 'resume', current: false
+}, {name: 'videos', href: 'videos', current: false},];
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

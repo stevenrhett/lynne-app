@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div className="contact">
             <h3>Contact Us</h3>
-            <Form method="post" action="/profile/about">
+            <Form method="post" action="/pages/about">
                 <label>
                     <span>Your email:</span>
                     <input type="email" name="email" required />
